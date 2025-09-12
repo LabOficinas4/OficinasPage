@@ -17,8 +17,7 @@ timezone: America/Sao_Paulo
 title: Laboratório Oficinas 4.0 # the main title
 
 tagline: Laboratório de Pesquisa Oficinas 4.0 sediado no IFSP Guarulhos
-description: >- # used by seo meta and the atom feed
-Laboratório de Pesquisa Oficinas 4.0 sediado no IFSP Guarulhos
+description: Laboratório de Pesquisa Oficinas 4.0 sediado no IFSP Guarulhos
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://LabOficinas4.github.io"
