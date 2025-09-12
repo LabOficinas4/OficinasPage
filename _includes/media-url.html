@@ -20,17 +20,15 @@
     {%- comment -%} Prepend CND URL {%- endcomment -%}
     {% if site.cdn %}
       {% assign url = site.cdn | append: '/' | append: url %}
+    {% else %}
+      {% if include.absolute %}
+        {% assign url = url | absolute_url %}
+      {% else %}
+        {% assign url = url | relative_url %}
+      {% endif %}
     {% endif %}
 
     {% assign url = url | replace: '///', '/' | replace: '//', '/' | replace: ':/', '://' %}
-
-    {% unless url contains '://' %}
-      {% if include.absolute %}
-        {% assign url = site.url | append: site.baseurl | append: url %}
-      {% else %}
-        {% assign url = site.baseurl | append: url %}
-      {% endif %}
-    {% endunless %}
   {% endunless %}
 {%- endif -%}
 
