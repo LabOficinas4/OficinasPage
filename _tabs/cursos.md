@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_url: /categories/cursos
+redirect_url: /OficinasPage/categories/cursos
 icon: fas fa-users
 order: 1
 ---
